@@ -1,4 +1,4 @@
-# ME5413_Planning_Project
+# ME5413_Planning_Project (with LQR control)
 
 NUS ME5413 Autonomous Mobile Robotics Planning Project with PID and LQR control.
 
@@ -77,9 +77,14 @@ roslaunch me5413_world world.launch
 
 In the second terminal, launch the path publisher node and the path tracker node:
 
+#### PID Control
 ```bash
-# Load a map and launch AMCL localizer
 roslaunch me5413_world path_tracking.launch
+```
+
+#### LQR Control
+```bash
+roslaunch me5413_world path_tracking_LQR.launch
 ```
 
 ![rviz_tracking_image](src/me5413_world/media/rviz_tracking.png)
