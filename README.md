@@ -1,9 +1,10 @@
 # ME5413_Planning_Project
 
-NUS ME5413 Autonomous Mobile Robotics Planning Project
+NUS ME5413 Autonomous Mobile Robotics Planning Project with PID and LQR control.
+
 
 > Authors: [Ziggy](https://github.com/ziggyhuang) and [Shuo](https://github.com/SS47816)
-> Co-Author: [Ziggy](https://github.com/ccoopq)
+> Co-Author: [ikun](https://github.com/ccoopq)
 
 ![Ubuntu 20.04](https://img.shields.io/badge/OS-Ubuntu_20.04-informational?style=flat&logo=ubuntu&logoColor=white&color=2bbc8a)
 ![ROS Noetic](https://img.shields.io/badge/Tools-ROS_Noetic-informational?style=flat&logo=ROS&logoColor=white&color=2bbc8a)
@@ -47,12 +48,7 @@ This repo is a ros workspace, containing three rospkgs:
 - `me5413_world` the main pkg containing the gazebo world, source code, and the launch files
 - `jackal_description` contains the modified jackal robot model descriptions
 
-**Note:** If you are working on this project, it is encouraged to fork this repository and work on your own fork!
-
-After forking this repo to your own github:
-
 ```bash
-# Clone your own fork of this repo (assuming home here `~/`)
 cd
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/ME5413_Planning_Project.git
 cd ME5413_Planning_Project
