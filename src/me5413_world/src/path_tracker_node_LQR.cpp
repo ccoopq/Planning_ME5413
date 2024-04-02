@@ -57,10 +57,10 @@ Eigen::MatrixXd PathTrackerNode::solveGain(double angle)
     Q_ = Eigen::MatrixXd(3, 3);
     Q_ << 30, 0, 0,
           0, 30, 0,
-	  0, 0, 30;
+	  0, 0, 150;
     R_ = Eigen::MatrixXd(2, 2);
     R_ << 0.2, 0,
-          0, 0.03;
+          0, 0.01;
 
     // Compute LQR gain matrix K
     Eigen::MatrixXd P_ = solveRiccatiEquation(A_, B_, Q_, R_);
