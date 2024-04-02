@@ -100,9 +100,14 @@ Here we choose four tests with different A and B (in meters).
 RMSE is also recorded.
 |   | RMSE(xy) | RMSE(yaw) | RMSE(speed) |
 | ----- | ----- | ----- | ----- |
-| LQR | 0.27 | 5.14 | 0.53 |
-| PID | 0.35 | 7.87 | 0.17 |
-
+| LQR1 | 0.27 | 5.14 | 0.53 |
+| PID1 | 0.35 | 7.87 | 0.17 |
+| LQR2 | 0.44 | 9.35 | 0.50 |
+| PID2 | 0.40 | 10.74 | 0.16 |
+| LQR3 | 0.31 | 4.93 | 0.46 |
+| PID3 | 0.38 | 8.79 | 0.22 |
+| LQR4 | 0.33 | 9.04 | 0.41 |
+| PID4 | 0.38 | 10.12 | 0.23 |
 
 
 ## Contribution
