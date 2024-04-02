@@ -86,34 +86,10 @@ roslaunch me5413_world path_tracking.launch
 ```bash
 roslaunch me5413_world path_tracking_LQR.launch
 ```
+The replaced codes are in `src/me5413_world/include/me5413_world/path_tracker_node_LQR.hpp` and `src/me5413_world/src/path_tracker_node_LQR.cpp`.
 
 ![rviz_tracking_image](src/me5413_world/media/rviz_tracking.png)
 
-## Student Tasks
-
-- Control your robot to follow the given **figure 8** track.
-
-  - You may use any algorithms you like.
-  - Implement your algorithms in the `src/me5413_world/include/me5413_world/path_tracker_node.hpp` and `src/me5413_world/src/path_tracker_node.cpp`, to replace our template code.
-  - Test your algorithms on the track & Report your tracking accuracy.
-
-- In the template code, we have provided you:
-
-  - A dumb **PID** controller for the throttle.
-  - A weird **Stanley** controller for the steering.
-  - However, both are not properly configured or tuned.
-
-- We have provided you a dynamic reconfigure GUI that allows you to tune some of the parameters:
-
-  ![rqt_reconfig_image](src/me5413_world/media/rqt_reconfig.png)
-
-- We also provides you six topics (and visualized in RVIZ) that computes the real-time errors between your robot and the tracking path:
-  - `/me5413_world/planning/abs_position_error` ([m], `std_msgs::Float32`)
-  - `/me5413_world/planning/abs_heading_error` ([deg], `std_msgs::Float32`)
-  - `/me5413_world/planning/abs_speed_error` ([m/s], `std_msgs::Float32`)
-  - `/me5413_world/planning/rms_position_error` ([m], `std_msgs::Float32`)
-  - `/me5413_world/planning/rms_heading_error` ([deg], `std_msgs::Float32`)
-  - `/me5413_world/planning/rms_speed_error` ([m/s], `std_msgs::Float32`)
 
 ## Contribution
 
