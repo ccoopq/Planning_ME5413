@@ -93,6 +93,12 @@ The replaced codes are in `src/me5413_world/include/me5413_world/path_tracker_no
 ![rviz_tracking_image](src/me5413_world/media/rviz_tracking.png)
 
 
+## Evaluations
+Here we choose four tests with different A and B (in meters). 
+![rviz_tracking_image](pos_error.png)
+
+RMSE is also recorded.
+
 ## Contribution
 
 You are welcome contributing to this repo by opening a pull-request
