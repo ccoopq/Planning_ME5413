@@ -98,6 +98,12 @@ Here we choose four tests with different A and B (in meters).
 ![rviz_tracking_image](pos_error.png)
 
 RMSE is also recorded.
+|   | RMSE(xy) | RMSE(yaw) | RMSE(speed) |
+| ----- | ----- | ----- | ----- |
+| LQR | 0.27 | 5.14 | 0.53 |
+| PID | 0.35 | 7.87 | 0.17 |
+
+
 
 ## Contribution
 
