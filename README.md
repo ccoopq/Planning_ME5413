@@ -6,6 +6,8 @@ NUS ME5413 Autonomous Mobile Robotics Planning Project with PID and LQR control.
 > Authors: [Ziggy](https://github.com/ziggyhuang) and [Shuo](https://github.com/SS47816)
 > Co-Author: [ikun](https://github.com/ccoopq)
 
+>Original Project: [link](https://github.com/NUS-Advanced-Robotics-Centre/ME5413_Planning_Project)
+
 ![Ubuntu 20.04](https://img.shields.io/badge/OS-Ubuntu_20.04-informational?style=flat&logo=ubuntu&logoColor=white&color=2bbc8a)
 ![ROS Noetic](https://img.shields.io/badge/Tools-ROS_Noetic-informational?style=flat&logo=ROS&logoColor=white&color=2bbc8a)
 ![C++](https://img.shields.io/badge/Code-C++-informational?style=flat&logo=c%2B%2B&logoColor=white&color=2bbc8a)
