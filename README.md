@@ -109,6 +109,8 @@ RMSE is also recorded.
 | LQR4 | 0.33 | 9.04 | 0.41 |
 | PID4 | 0.38 | 10.12 | 0.23 |
 
+1 to 4 correspond to four different tests.
+
 
 ## Contribution
 
