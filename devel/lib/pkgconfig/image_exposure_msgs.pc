@@ -1,0 +1,8 @@
+prefix=/media/ikun/T7/task3/ME5413_Planning_Project-main/devel
+
+Name: image_exposure_msgs
+Description: Description of image_exposure_msgs
+Version: 0.14.2
+Cflags: -I/media/ikun/T7/task3/ME5413_Planning_Project-main/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime statistics_msgs std_msgs

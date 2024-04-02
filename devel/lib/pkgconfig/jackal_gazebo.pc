@@ -1,0 +1,8 @@
+prefix=/media/ikun/T7/task3/ME5413_Planning_Project-main/devel
+
+Name: jackal_gazebo
+Description: Description of jackal_gazebo
+Version: 0.3.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

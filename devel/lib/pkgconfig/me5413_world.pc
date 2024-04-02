@@ -1,0 +1,8 @@
+prefix=/media/ikun/T7/task3/ME5413_Planning_Project-main/devel
+
+Name: me5413_world
+Description: Description of me5413_world
+Version: 0.0.0
+Cflags: -I/media/ikun/T7/task3/ME5413_Planning_Project-main/devel/include -I/media/ikun/T7/task3/ME5413_Planning_Project-main/src/me5413_world/include
+Libs: -L${prefix}/lib -lme5413_world
+Requires: roscpp rospy std_msgs geometry_msgs nav_msgs dynamic_reconfigure

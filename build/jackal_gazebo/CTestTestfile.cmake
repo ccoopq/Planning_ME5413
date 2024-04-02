@@ -1,0 +1,8 @@
+# CMake generated Testfile for 
+# Source directory: /media/ikun/T7/task3/ME5413_Planning_Project-main/src/jackal_gazebo
+# Build directory: /media/ikun/T7/task3/ME5413_Planning_Project-main/build/jackal_gazebo
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(_ctest_jackal_gazebo_roslaunch-check_launch_jackal_world.launch "/media/ikun/T7/task3/ME5413_Planning_Project-main/build/catkin_generated/env_cached.sh" "/usr/bin/python2" "/opt/ros/melodic/share/catkin/cmake/test/run_tests.py" "/media/ikun/T7/task3/ME5413_Planning_Project-main/build/test_results/jackal_gazebo/roslaunch-check_launch_jackal_world.launch.xml" "--return-code" "/usr/local/bin/cmake -E make_directory /media/ikun/T7/task3/ME5413_Planning_Project-main/build/test_results/jackal_gazebo" "/opt/ros/melodic/share/roslaunch/cmake/../scripts/roslaunch-check -o \"/media/ikun/T7/task3/ME5413_Planning_Project-main/build/test_results/jackal_gazebo/roslaunch-check_launch_jackal_world.launch.xml\" \"/media/ikun/T7/task3/ME5413_Planning_Project-main/src/jackal_gazebo/launch/jackal_world.launch\" ")
+set_tests_properties(_ctest_jackal_gazebo_roslaunch-check_launch_jackal_world.launch PROPERTIES  _BACKTRACE_TRIPLES "/opt/ros/melodic/share/catkin/cmake/test/tests.cmake;160;add_test;/opt/ros/melodic/share/roslaunch/cmake/roslaunch-extras.cmake;66;catkin_run_tests_target;/media/ikun/T7/task3/ME5413_Planning_Project-main/src/jackal_gazebo/CMakeLists.txt;8;roslaunch_add_file_check;/media/ikun/T7/task3/ME5413_Planning_Project-main/src/jackal_gazebo/CMakeLists.txt;0;")

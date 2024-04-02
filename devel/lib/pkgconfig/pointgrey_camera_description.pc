@@ -1,0 +1,8 @@
+prefix=/media/ikun/T7/task3/ME5413_Planning_Project-main/devel
+
+Name: pointgrey_camera_description
+Description: Description of pointgrey_camera_description
+Version: 0.14.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

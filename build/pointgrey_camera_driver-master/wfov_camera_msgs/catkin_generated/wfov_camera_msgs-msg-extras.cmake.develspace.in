@@ -1,0 +1,2 @@
+set(wfov_camera_msgs_MESSAGE_FILES "/media/ikun/T7/task3/ME5413_Planning_Project-main/src/pointgrey_camera_driver-master/wfov_camera_msgs/msg/WFOVCompressedImage.msg;/media/ikun/T7/task3/ME5413_Planning_Project-main/src/pointgrey_camera_driver-master/wfov_camera_msgs/msg/WFOVImage.msg;/media/ikun/T7/task3/ME5413_Planning_Project-main/src/pointgrey_camera_driver-master/wfov_camera_msgs/msg/WFOVTrigger.msg")
+set(wfov_camera_msgs_SERVICE_FILES "")
