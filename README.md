@@ -93,6 +93,24 @@ The replaced codes are in `src/me5413_world/include/me5413_world/path_tracker_no
 ![rviz_tracking_image](src/me5413_world/media/rviz_tracking.png)
 
 
+## LQR Model
+定义系统动力学函数和成本函数
+
+$$x_{t+1}  =  Ax_t + Bu_t$$
+
+$$J(u) = \frac{1}{2}\int_{t_0}^{t_f} (x^T(t)Q(t)x(t) + u^T(t)R(t)u(t)) dt$$
+
+Q(t) 称为状态成本矩阵。 Q 权衡每个状态在状态向量中的相对重要性。通过使 Q 的相应值变大来定位想要低误差的状态，加速收敛。 R(t) 是输入成本矩阵，这一项也成为正则化项。$x(t)$可以是状态向量，也可以是状态误差向量。
+
+通过求解Ricatti方程，直接得到最终控制方程（部分变量省略了t下标）
+
+$$K = -(R+B^TPB)^{-1}B^TPA$$
+
+$$u(t) = Kx(t)$$
+
+在本项目中，建立如下系统动力学函数
+
+
 ## Evaluations
 Here we choose four tests with different A and B (in meters). 
 
