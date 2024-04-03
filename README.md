@@ -110,6 +110,19 @@ $$u(t) = Kx(t)$$
 
 在本项目中，建立如下系统动力学函数
 
+$$
+x_t = x_{t-1} + v_{t-1}cos(\lambda_{t-1})dt
+$$
+
+$$
+y_t = y_{t-1} + v_{t-1}sin(\lambda_{t-1})dt
+$$
+
+$$
+\lambda_t = \lambda_{t-1} + \omega_{t-1}dt
+$$
+
+Where $x_t(state) = [x_t, y_t, \lambda_t]^T$, $u_t = [v_t, \omega_t]^T$.
 
 ## Evaluations
 Here we choose four tests with different A and B (in meters). 
