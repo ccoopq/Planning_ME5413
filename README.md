@@ -94,21 +94,21 @@ The replaced codes are in `src/me5413_world/include/me5413_world/path_tracker_no
 
 
 ## LQR Model
-定义系统动力学函数和成本函数
+Define system dynamics functions and cost functions.
 
 $$x_{t+1}  =  Ax_t + Bu_t$$
 
 $$J(u) = \frac{1}{2}\int_{t_0}^{t_f} (x^T(t)Q(t)x(t) + u^T(t)R(t)u(t)) dt$$
 
-Q(t) 称为状态成本矩阵。 Q 权衡每个状态在状态向量中的相对重要性。通过使 Q 的相应值变大来定位想要低误差的状态，加速收敛。 R(t) 是输入成本矩阵，这一项也成为正则化项。$x(t)$可以是状态向量，也可以是状态误差向量。
+Q(t) is the state cost matrix. Q weighs the relative importance of each state in the state vector. Speed up convergence by locating the state where you want low error by making the corresponding value of Q larger. R(t) is the input cost matrix, and this term also becomes the regularization term. $x(t)$ can be a state vector or a state error vector.
 
-通过求解Ricatti方程，直接得到最终控制方程（部分变量省略了t下标）
+By solving the Ricatti equation, the final governing equation is directly obtained (the t subscript is omitted for some variables).
 
 $$K = -(R+B^TPB)^{-1}B^TPA$$
 
 $$u(t) = Kx(t)$$
 
-在本项目中，建立如下系统动力学函数
+In this project, the following system dynamics function is established.
 
 $$
 x_t = x_{t-1} + v_{t-1}cos(\lambda_{t-1})dt
