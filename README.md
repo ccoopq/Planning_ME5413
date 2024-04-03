@@ -94,6 +94,8 @@ The replaced codes are in `src/me5413_world/include/me5413_world/path_tracker_no
 
 
 ## LQR Model
+(This part of the work refers to the [link](https://kowshikchilamkurthy.medium.com/rl-vs-optimal-control-lqr-for-trajectory-tracking-with-python-code-105ce44e1761))
+
 Define system dynamics functions and cost functions.
 
 $$x_{t+1}  =  Ax_t + Bu_t$$
