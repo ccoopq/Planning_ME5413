@@ -95,9 +95,13 @@ The replaced codes are in `src/me5413_world/include/me5413_world/path_tracker_no
 
 ## Evaluations
 Here we choose four tests with different A and B (in meters). 
-![rviz_tracking_image](pos_error.png)
 
-RMSE is also recorded.
+### 1. Position Error
+![rviz_tracking_image](pos_error.png)
+ - The overall position estimation error of the LQR method should be smaller than that of PID and Stanley, although it may be higher in certain positions compared to the latter. The error curve of the latter fluctuates unpredictably because there has been no adjustment made to the parameters of PID, resulting in more severe overshooting. 
+ - The convergence speed of the LQR algorithm is slow at the beginning, which is related to the setting of the Q matrix. It remains relatively low in the middle of the curve, corresponding to the straight-line approximation of the "8" shape curve, while it is higher on both sides, corresponding to the curved parts of the curve. This indicates that the deviation of this LQR algorithm is larger when cornering, further parameter adjustments or introduction of integral terms are needed.
+
+### 2. RMSE
 |   | RMSE(xy) | RMSE(yaw) | RMSE(speed) |
 | ----- | ----- | ----- | ----- |
 | LQR1 | 0.27 | 5.14 | 0.53 |
@@ -109,7 +113,9 @@ RMSE is also recorded.
 | LQR4 | 0.33 | 9.04 | 0.41 |
 | PID4 | 0.38 | 10.12 | 0.23 |
 
-1 to 4 correspond to four different tests.
+1 to 4 correspond to four different tests. 
+- Compared to PID, LQR exhibits lower RMSE in the estimation of position (xy) and yaw, resulting in more stable tracking.
+- LQR shows significant deviation in velocity estimation, possibly due to the weight setting for throttle in the R matrix of the LQR algorithm being too low, leading to inadequate constraint on the throttle value by the regularization term.
 
 
 ## Contribution
