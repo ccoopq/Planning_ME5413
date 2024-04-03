@@ -90,8 +90,6 @@ roslaunch me5413_world path_tracking_LQR.launch
 ```
 The replaced codes are in `src/me5413_world/include/me5413_world/path_tracker_node_LQR.hpp` and `src/me5413_world/src/path_tracker_node_LQR.cpp`.
 
-![rviz_tracking_image](src/me5413_world/media/rviz_tracking.png)
-
 
 ## LQR Model
 (This part of the work refers to the [link](https://kowshikchilamkurthy.medium.com/rl-vs-optimal-control-lqr-for-trajectory-tracking-with-python-code-105ce44e1761))
